@@ -1,0 +1,208 @@
+/* All the code used in this CSS style sheet is courtesy of w3school.com
+and the web programming course*/
+.mq-panels {
+  display:inline-block;
+  box-sizing: border-box;
+  width:calc(100% / 1);
+}
+
+@media only screen and (min-width: 700px) {
+  .mq-panels { width: calc(100% / 2); }
+}
+@media only screen and (min-width: 800px) {
+  .mq-panels { width: calc(100% / 3); }
+}
+/* media querry resizer */
+
+
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 720px;
+    width: 100%;
+    font-family: 'Questrial', sans-serif;
+}
+
+navigation {
+    width: 100vw;
+    text-align: center;
+}
+
+navigation ul {
+    width: 100vw;
+    border: 1px red solid;
+    list-style-type: none;
+    padding: 3px;
+    margin: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: hsl(61, 96%, 71%);
+}
+
+navigation ul li {
+  display: inline;
+  margin-right: 1em;
+}
+
+navigation ul li a{
+   text-decoration: none; 
+}
+
+navigation ul li a:hover{
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+main{
+    margin: 0;
+    min-height: 75vh;
+}
+
+.login{
+    border: 2px blue solid;
+    width: auto;
+    padding: 5px;
+}
+
+input, select{
+    padding: 5px;
+    margin: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]{
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.right input[type=text]{
+    /*width: inherit;*/
+}
+
+.home{
+    height: 75%;
+    min-height: inherit;
+    max-width: 100%;
+    border: 1px blue solid;
+    padding: 0;
+    margin: 0;
+}
+
+
+.left, .right{
+    max-width: 25%;
+    min-width: 24%;
+    min-height: inherit;
+    border: 1px yellow solid;
+    display: inline-block;
+    margin: inherit;
+    padding: inherit;
+    vertical-align: top;
+    background-color: hsl(61, 96%, 86%);
+}
+
+.left ul{
+    list-style-type: none;
+}
+
+.left ul li{
+    padding: 10px;
+}
+
+.left ul li a:hover{
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+.left ul li a{
+    text-decoration: none;
+    border: 1px burlywood solid;
+    padding: 5px;
+}
+
+.right #friendReq{
+    vertical-align: top;
+    min-height: 50%;
+    display: inherit;
+    min-width: 100%;
+}
+
+.right #friendSrch{
+    vertical-align: bottom;
+    min-height: 50%;
+    display: inherit;
+    min-width: 100%;
+}
+
+.button{
+    font-size: 10px;
+    background-color: darkturquoise;
+    border-radius: 10px;
+}
+
+#friendSrch ul{
+    list-style-type: none;
+}
+
+#friendReq ul{
+    list-style-type: none;
+}
+
+.posts{
+    display: block;
+    border: 1px blue solid;
+    padding: 5px;
+    background-color: hsl(200, 95%, 90%);
+}
+
+.comments{
+    display: block;
+    border: 1px green solid;
+    margin: 5px;
+    padding: 5px;
+    background-color: hsl(120, 95%, 90%);
+}
+
+.middle {
+    max-width: 98%;
+    min-width: 90%;
+    min-height: inherit;
+    border: 1px green solid;
+    display: inline-block;
+    margin: inherit;
+    padding: 5px;
+    overflow-y: auto;
+    background-image: linear-gradient(to bottom, hsla(354, 60%, 89%, 0.7), hsla(339, 75%, 62%, 0.9));
+}
+
+.register label{
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    float: left;
+    clear: left;
+}
+
+.register input{
+    display: inline-block;
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.register input[type=radio]{
+   width: 20%; 
+}
+
+.register input[type=checkbox]{
+    width: 20%; 
+ }
